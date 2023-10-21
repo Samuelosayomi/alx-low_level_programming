@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** _strcat - Function name
+/**
+ * _strcat - Function name
  * dest: First parameter
  * src: Second parameter
  * Return: dest
@@ -8,18 +9,18 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int destlen = 0;
-	int srclen = 0;
-	int i;
+	int i, j;
 
-	for (i = 0; dest[i] != '\0'; i++)
-		destlen++;
-	for (i = 0; src[i] != '\0'; i++)
-		srclen++;
+	i = 0;
+	j = 0;
 
-	for (i = 0; i = srclen; i++)
+	while (dest[i] != '\0')
+		i++;
+
+	while (src[j] != '\0')
 	{
-		dest[destlen + i] = src[i];
+		dest[i + j] = src[j];
+		j++;
 	}
 	return (dest);
 }
